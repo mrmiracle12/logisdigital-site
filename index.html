@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Logis Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.6;
+    }
+    header {
+      background: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #111;
+    }
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      color: #007aff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 120px 20px;
+      background: linear-gradient(145deg, #f8f8f8, #ffffff);
+    }
+    .hero h2 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+    .btn {
+      padding: 14px 30px;
+      background: #007aff;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #005fcc;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .service {
+      flex: 1 1 280px;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 30px;
+      background: #fafafa;
+      transition: transform 0.2s ease;
+    }
+    .service:hover {
+      transform: translateY(-5px);
+    }
+    .service h4 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .service p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    #contact p, footer {
+      text-align: center;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 40px 20px;
+      background: #f6f6f6;
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    @media (max-width: 700px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .services {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Logis Digital</h1>
+    <nav>
+      <a href="#about">О нас</a>
+      <a href="#services">Услуги</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Умные digital-решения<br> для вашего бизнеса</h2>
+    <p>Создаём Telegram-ботов, сайты и ведём соцсети. Чистый код, сильный дизайн, результат.</p>
+    <a href="https://t.me/yourusername" class="btn" target="_blank">Связаться в Telegram</a>
+  </section>
+
+  <section id="about">
+    <h3>О нас</h3>
+    <p>
+      Уже более двух лет мы работаем с бизнесами всех масштабов — от локальных брендов до федеральных компаний. 
+      Мы нацелены на результат, работаем быстро и без воды. Наши клиенты возвращаются и рекомендуют нас своим.
+    </p>
+  </section>
+
+  <section id="services">
+    <h3>Наши услуги</h3>
+    <div class="services">
+      <div class="service">
+        <h4>Telegram-боты</h4>
+        <p>Создаём ботов любой сложности: от автоворонок и CRM до поддержки клиентов и оплат.</p>
+      </div>
+      <div class="service">
+        <h4>Сайты под ключ</h4>
+        <p>Адаптивные, быстрые, стильные сайты. Визитки, лендинги, портфолио и интернет-магазины.</p>
+      </div>
+      <div class="service">
+        <h4>Продвижение</h4>
+        <p>Продвигаем ваш продукт в Telegram, Instagram, VK и других соцсетях. Контент, трафик, воронки.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Контакты</h3>
+    <p>Telegram: <a href="https://t.me/yourusername" target="_blank">@yourusername</a><br>
+    Email: <a href="mailto:info@logisdigital.ru">info@logisdigital.ru</a></p>
+  </section>
+
+  <footer>
+    © 2025 Logis Digital. Все права защищены.
+  </footer>
+
+</body>
+</html>
